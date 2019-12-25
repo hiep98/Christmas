@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mountains of Christmas', cursive;
+ 
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #fca8ef;
+    overflow: hidden;
+
+    animation: bgAnimate  10s linear infinite;
+}
+
+.box .tree{
+    position: absolute;
+    bottom: -131px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.box  .tree.tree1{
+
+    background: url(../i/tree1.png);
+    background-repeat: repeat-x;
+    animation: animate 15s linear infinite;
+    z-index: 3;
+}
+
+
+.box  .tree.tree2{
+
+    background: url(../i/tree2.png);
+    background-repeat: repeat-x;
+    animation: animate 25s linear infinite;
+
+}
+
+.box  .tree.tree3{
+
+    background: url(../i/tree3.png);
+    background-repeat: repeat-x;
+    animation: animate 45s linear infinite;
+
+}
+
+
+@keyframes animate
+{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 1406px 0;
+    }
+}
+
+
+
+
+.box .snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../i/snow.png);
+    z-index: 4;
+    animation: snow 15s linear infinite;
+
+}
+
+
+@keyframes snow
+{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position:  0 768px;
+    }
+}
+
+h1 {
+    margin: 20px 0 0 ;
+    padding: 0;
+    text-align: center;
+    font-size: 6em;
+    animation: colorAnimate  10s linear infinite;
+}
+
+
+h2 {
+    margin: 20px 0 0 ;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+    animation: colorAnimate  10s linear infinite;
+}
+
+
+
+
+
+@keyframes bgAnimate
+{
+    0%{
+        background: #fca8ef;
+    } 
+
+    20%{
+        background: #FF33FF;
+    } 
+
+    40%{
+        background: #fca8ef ;
+    }
+    60%{
+        background: #CC33FF  ;
+    }
+    80%{
+        background: #FF6699  ;
+    } 
+
+    100%{
+        background: #6666FF ;
+    } 
+}
+
+
+@keyframes colorAnimate
+{
+    0%{
+        color: #fca8ef;
+    } 
+
+    20%{
+        color: #FF33FF;
+    } 
+
+    40%{
+        color: #fca8ef ;
+    }
+    60%{
+        color: #CC33FF  ;
+    }
+    80%{
+        color: #FF6699  ;
+    } 
+
+    100%{
+        color: #6666FF ;
+    } 
+}
